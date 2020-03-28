@@ -9,9 +9,9 @@ import requests
 from bs4 import BeautifulSoup
 #python2 OR python3
 try:
-    from urllib.parse import urlparse
+    from urllib.parse import urljoin
 except ImportError:
-     from urlparse import urlparse
+     from urlparse import urljoin
 import re
 
 #tells us which links have been (depth-first) recursively searched
